@@ -1,0 +1,5 @@
+<mat-form-field hintLabel="Máx. 4 caracteres" appearance="fill">
+  <mat-label>Inserte el núm. de régimen</mat-label>
+  <input matInput #input maxlength="4" placeholder="XXXX">
+  <mat-hint align="end">{{input.value.length}}/4</mat-hint>
+</mat-form-field>

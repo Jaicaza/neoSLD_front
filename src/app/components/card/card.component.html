@@ -1,0 +1,17 @@
+<mat-card id="card" class="card">
+  <mat-card-header>
+    <mat-card-title>Presentar CRA</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <app-regimen style="margin-right: 10px;"></app-regimen>
+    <app-ccc></app-ccc>
+    <app-monthpicker [parametro]="'Desde'"
+    style="font-size: 13px; width: 200px; margin-right: 10px;"></app-monthpicker>
+    <app-monthpicker [parametro]="'Hasta'"
+    style="font-size: 13px; width: 200px"></app-monthpicker>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="primary">Continuar</button>
+  </mat-card-actions>
+</mat-card>
+
