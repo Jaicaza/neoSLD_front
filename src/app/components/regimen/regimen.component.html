@@ -1,5 +1,6 @@
-<mat-form-field hintLabel="Máx. 4 caracteres" appearance="fill">
-  <mat-label>Inserte el núm. de régimen</mat-label>
-  <input matInput #input maxlength="4" placeholder="XXXX">
+<mat-form-field hintLabel="Máx. 4 caracteres" appearance="fill" style="margin-bottom: 7px;">
+  <mat-label>Régimen</mat-label>
+  <input matInput #input maxlength="4" placeholder="XXXX" [formControl]="regimen">
+  <mat-error *ngIf="regimen.invalid">{{getErrorMessage()}}</mat-error>
   <mat-hint align="end">{{input.value.length}}/4</mat-hint>
 </mat-form-field>

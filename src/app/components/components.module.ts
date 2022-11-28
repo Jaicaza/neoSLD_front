@@ -6,6 +6,7 @@ import { RegimenComponent } from './regimen/regimen.component';
 import { CccComponent } from './ccc/ccc.component';
 import { CardComponent } from './card/card.component';
 import { MonthpickerComponent } from './monthpicker/monthpicker.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -22,7 +23,8 @@ import { MonthpickerComponent } from './monthpicker/monthpicker.component';
     RegimenComponent,
     CccComponent,
     CardComponent,
-    MonthpickerComponent
+    MonthpickerComponent,
+    ReactiveFormsModule
   ],
   imports: [
     CommonModule,
