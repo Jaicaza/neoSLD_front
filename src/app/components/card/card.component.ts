@@ -15,8 +15,8 @@ export class CardComponent implements OnInit {
 intermediateJson = data;
 
 craForm = new FormGroup({
-  firstName: new FormControl(''),
-  secondName: new FormControl(''),
+  firstInput: new FormControl(''),
+  secondInput: new FormControl(''),
 })
 
 
