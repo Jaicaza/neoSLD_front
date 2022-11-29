@@ -3,10 +3,10 @@
           <div class="text-center">
             <h1>Presentar CRA</h1>
           </div>
-          <form action="#" class="border p-3 form">
+          <form action="#" class="border p-3 form" [formGroup]="craForm" (ngSubmit)="onSubmit()">
             <div class="form-group" style="margin-bottom: 15px;">
-              <app-regimen></app-regimen>
-              <app-ccc></app-ccc>
+              <app-regimen formControlName="firstName"></app-regimen>
+              <app-ccc formControlName="secondName"></app-ccc>
             </div>
             <div class="form-group ">
               <app-monthpicker
@@ -18,7 +18,7 @@
               [parametro]="'hasta'"
             ></app-monthpicker>
             </div>
-            <button type="submit" class="btn btn-primary">Continuar</button>
+            <button type="submit" class="btn btn-primary" (click)="onSubmit()">Continuar</button>
           </form>
         </div>
       </div>

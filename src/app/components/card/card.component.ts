@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import * as data from '../../../assets/numbers.json';
+import { HttpClient } from '@angular/common/http';
+import { FormControl, FormGroup } from '@angular/forms';
+
 
 @Component({
   selector: 'app-card',
@@ -9,9 +12,29 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 export class CardComponent implements OnInit {
 
 
-  constructor() { }
+intermediateJson = data;
+
+craForm = new FormGroup({
+  firstName: new FormControl(''),
+  secondName: new FormControl(''),
+})
+
+
+  constructor(private httpClient: HttpClient) {
+      console.log(data);
+    }
 
   ngOnInit(): void {
+  }
+
+  /*getData():void {
+    this.httpClient.get("assets/numbers.json").subscribe(data =>{
+      console.log(data);
+    })
+  }*/
+
+  onSubmit() {
+    console.log(this.craForm.value);
   }
 
 }
