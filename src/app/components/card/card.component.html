@@ -3,7 +3,7 @@
           <div class="text-center">
             <h1>Presentar CRA</h1>
           </div>
-          <form action="#" class="border p-3 form" [formGroup]="craForm" (ngSubmit)="onSubmit()">
+          <form action="#" class="border p-3 form" [formGroup]="craForm" >
             <div class="form-group" style="margin-bottom: 15px;">
               <app-regimen ngDefaultControl formControlName="firstInput"></app-regimen>
               <app-ccc ngDefaultControl formControlName="secondInput"></app-ccc>
@@ -18,7 +18,14 @@
               [parametro]="'hasta'"
             ></app-monthpicker>
             </div>
-            <button type="submit" class="btn btn-primary" (click)="onSubmit()">Continuar</button>
+            <button id="boton1"
+                    type="submit"
+                    class="btn btn-primary"
+                    (click)="onSubmit()"
+                    [disabled]="!craForm.valid"
+                    >
+                    Continuar
+            </button>
           </form>
         </div>
       </div>
