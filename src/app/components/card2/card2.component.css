@@ -1,5 +1,5 @@
 .container{
-  display: flex;
+  display: block;
   height: 400px;
   width: 400px;
   margin-top: 40px;
@@ -7,3 +7,13 @@
   align-items: center;
   text-align: center;
 }
+
+.obligatorios {
+  display:inline-flexbox;
+}
+
+.opcionales {
+  display:inline-flexbox;
+}
+
+

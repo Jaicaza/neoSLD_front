@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Card2Component implements OnInit {
 
+
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
+
+
 
 }
