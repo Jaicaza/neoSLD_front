@@ -15,7 +15,7 @@
             ></app-monthpicker>
             <app-monthpicker
               id="Hasta"
-              [parametro]="'hasta'"
+              [parametro]="'Hasta'"
             ></app-monthpicker>
             </div>
             <button id="boton1"
@@ -23,6 +23,7 @@
                     class="btn btn-primary"
                     (click)="onSubmit()"
                     [disabled]="!craForm.valid"
+                    routerLink="/maqueta002"
                     >
                     Continuar
             </button>

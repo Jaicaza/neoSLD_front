@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import * as data from '../../../assets/numbers.json';
 import { HttpClient } from '@angular/common/http';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -20,9 +21,11 @@ craForm = new FormGroup({
 })
 
 
-  constructor(private httpClient: HttpClient) {
-      console.log(data);
-    }
+  constructor(private httpClient: HttpClient,
+              private router:Router)
+
+              {console.log(data);
+              }
 
   ngOnInit(): void {
   }
@@ -36,8 +39,10 @@ craForm = new FormGroup({
   onSubmit() {
     if (this.craForm.valid) {
       console.log("Formulario guardado");
+      this.router.navigate(['maqueta002']);
     }
     console.log(this.craForm.value);
   }
+
 
 }
