@@ -7,6 +7,7 @@ import { CccComponent } from './ccc/ccc.component';
 import { CardComponent } from './card/card.component';
 import { MonthpickerComponent } from './monthpicker/monthpicker.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { Card2Component } from './card2/card2.component';
 
 
 
@@ -17,7 +18,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     RegimenComponent,
     CccComponent,
     CardComponent,
-    MonthpickerComponent
+    MonthpickerComponent,
+    Card2Component
   ],
   exports: [
     HeaderComponent,
@@ -25,7 +27,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     CccComponent,
     CardComponent,
     MonthpickerComponent,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    Card2Component
 
   ],
   imports: [
