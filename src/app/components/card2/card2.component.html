@@ -3,22 +3,21 @@
     <div class="text-center">
       <h1>Presentar CRA</h1>
     </div>
-    <form action="#" class="border p-3 form">
+    <form [formGroup]="form002" novalidate class="border p-3 form">
 
       <div class="obligatorios">
         <h3 style="background-color: #3F51B5">Obligatorios</h3>
-        <app-list></app-list>
+        <mat-selection-list #naf>
+          <mat-list-option *ngFor="let naf of nafObligatorio">
+            {{naf}}
+          </mat-list-option>
+        </mat-selection-list>
       </div>
       <br>
 
-      <div class="opcionales">
-        <h3 style="background-color: #3F51B5">Opcionales</h3>
-        <app-list2></app-list2>
-      </div>
-
       <br>
-      <button id="boton1" type="submit" class="btn btn-primary">
-        Siguiente
+      <button id="boton1" type="submit" class="btn btn-primary" routerLink="/maqueta001" (click)="booleanVar ? funcion1() : funcion2()">
+        {{ naf.selectedOptions.selected.length !== 0 ? 'Siguiente' : 'Terminado' }}
       </button>
 
     </form>

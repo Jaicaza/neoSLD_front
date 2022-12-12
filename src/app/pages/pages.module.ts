@@ -6,6 +6,7 @@ import { Maqueta002Component } from './maqueta002/maqueta002.component';
 import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
 import { AngularMaterialModule } from '../angular-material/angular-material.module';
 import { AppRoutingModule } from '../app-routing.module';
+import { Maqueta003Component } from './maqueta003/maqueta003.component';
 
 
 
@@ -13,7 +14,8 @@ import { AppRoutingModule } from '../app-routing.module';
   declarations: [
     NoPageFoundComponent,
     Maqueta001Component,
-    Maqueta002Component
+    Maqueta002Component,
+    Maqueta003Component
   ]
   ,
   imports: [

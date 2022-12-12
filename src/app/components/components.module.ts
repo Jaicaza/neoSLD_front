@@ -8,8 +8,6 @@ import { CardComponent } from './card/card.component';
 import { MonthpickerComponent } from './monthpicker/monthpicker.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { Card2Component } from './card2/card2.component';
-import { ListComponent } from './list/list.component';
-import { List2Component } from './list2/list2.component';
 
 
 
@@ -21,9 +19,7 @@ import { List2Component } from './list2/list2.component';
     CccComponent,
     CardComponent,
     MonthpickerComponent,
-    Card2Component,
-    ListComponent,
-    List2Component
+    Card2Component
   ],
   exports: [
     HeaderComponent,

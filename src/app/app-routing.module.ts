@@ -7,11 +7,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { NoPageFoundComponent } from './pages/no-page-found/no-page-found.component';
 import { Maqueta001Component } from './pages/maqueta001/maqueta001.component';
 import { Maqueta002Component } from './pages/maqueta002/maqueta002.component';
+import { Maqueta003Component } from './pages/maqueta003/maqueta003.component';
 
 
 const routes: Routes = [
   { path: 'maqueta001', component: Maqueta001Component },
   { path: 'maqueta002', component: Maqueta002Component },
+  { path: 'maqueta003', component: Maqueta003Component },
   { path: '', redirectTo: '/maqueta001', pathMatch: 'full' },
   { path: '**', component: NoPageFoundComponent },
 ];
