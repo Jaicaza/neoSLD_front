@@ -1,4 +1,4 @@
-<mat-form-field hintLabel="Máx. 11 caracteres" appearance="fill">
+<mat-form-field appearance="fill">
   <mat-label>CCC</mat-label>
   <input matInput #input maxlength="11" placeholder="XXXXXXXXXXX" [formControl]="ccc">
   <mat-error *ngIf="ccc.invalid">{{getErrorMessage()}}</mat-error>

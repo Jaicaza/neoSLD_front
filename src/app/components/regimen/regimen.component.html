@@ -1,4 +1,4 @@
-<mat-form-field hintLabel="Máx. 4 caracteres" appearance="fill" style="margin-bottom: 7px;">
+<mat-form-field appearance="fill" style="margin-bottom: 7px;">
   <mat-label>Régimen</mat-label>
   <input matInput #input maxlength="4" placeholder="XXXX" [formControl]="regimen">
   <mat-error *ngIf="regimen.invalid">{{getErrorMessage()}}</mat-error>
