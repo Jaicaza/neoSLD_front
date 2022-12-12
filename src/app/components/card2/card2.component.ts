@@ -10,41 +10,16 @@ import { Router } from '@angular/router';
 export class Card2Component implements OnInit {
 
   form002 = new FormGroup({
-    firstInput: new FormControl('', Validators.required)
   });
 
   nafObligatorio: string[] = ['123123123145 - CAF', '145478554261 - CAF', '284544786323 - CAF'];
 
-  booleanVar!: boolean;
-
-
-  funcion1() {
-    alert("Termino");
-  }
-
-  funcion2() {
-    alert("Paso a la siguiente");
-  }
-
-  activaEdicion(){
-    //this.booleanVar = !this.booleanVar;
-
-    if(this.booleanVar){
-      this.funcion1;
-    }else{
-      this.funcion2;
-    }
-  }
-
-
 
   constructor(private router:Router) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void { }
 
+  onSubmit() {
+      this.router.navigate(['maqueta003']);
+    }
   }
-
-
-
-
-}

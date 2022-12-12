@@ -16,8 +16,11 @@
       <br>
 
       <br>
-      <button id="boton1" type="submit" class="btn btn-primary" routerLink="/maqueta001" (click)="booleanVar ? funcion1() : funcion2()">
-        {{ naf.selectedOptions.selected.length !== 0 ? 'Siguiente' : 'Terminado' }}
+      <button id="boton2" type="submit" (click)="onSubmit()" class="btn btn-primary" *ngIf="naf.selectedOptions.selected.length !== 0" routerLink="/maqueta003" >
+        Siguiente
+      </button>
+      <button id="boton3" type="submit" class="btn btn-primary" *ngIf="naf.selectedOptions.selected.length == 0" >
+        Terminar
       </button>
 
     </form>
