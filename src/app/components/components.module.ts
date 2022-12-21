@@ -8,7 +8,10 @@ import { CardComponent } from './card/card.component';
 import { MonthpickerComponent } from './monthpicker/monthpicker.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { Card2Component } from './card2/card2.component';
-import { TabsComponent } from './tabs/tabs.component';
+import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.component';
+import { Card3Component } from './card3/card3.component';
+import { CheckBoxComponent } from './check-box/check-box.component';
+import { CheckBoxOpcionalesComponent } from './check-box-opcionales/check-box-opcionales.component';
 
 
 
@@ -21,7 +24,10 @@ import { TabsComponent } from './tabs/tabs.component';
     CardComponent,
     MonthpickerComponent,
     Card2Component,
-    TabsComponent
+    ExpansionPanelComponent,
+    Card3Component,
+    CheckBoxComponent,
+    CheckBoxOpcionalesComponent,
   ],
   exports: [
     HeaderComponent,
@@ -31,7 +37,10 @@ import { TabsComponent } from './tabs/tabs.component';
     MonthpickerComponent,
     ReactiveFormsModule,
     Card2Component,
-    TabsComponent
+    ExpansionPanelComponent,
+    Card3Component,
+    CheckBoxComponent,
+    CheckBoxOpcionalesComponent,
 
   ],
   imports: [

@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TabsComponent } from './tabs.component';
+import { CheckBoxOpcionalesComponent } from './check-box-opcionales.component';
 
-describe('TabsComponent', () => {
-  let component: TabsComponent;
-  let fixture: ComponentFixture<TabsComponent>;
+describe('CheckBoxOpcionalesComponent', () => {
+  let component: CheckBoxOpcionalesComponent;
+  let fixture: ComponentFixture<CheckBoxOpcionalesComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TabsComponent ]
+      declarations: [ CheckBoxOpcionalesComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TabsComponent);
+    fixture = TestBed.createComponent(CheckBoxOpcionalesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

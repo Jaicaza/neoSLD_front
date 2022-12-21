@@ -12,7 +12,7 @@ export class Card2Component implements OnInit {
   form002 = new FormGroup({
   });
 
-  nafObligatorio: string[] = ['123123123145 - CAF', '145478554261 - CAF', '284544786323 - CAF'];
+  nafObligatorio: string[] = ['123123123145 - RMH', '145478554261 - CFG', '284544786323 - CAF'];
 
 
   constructor(private router:Router) { }
