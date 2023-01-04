@@ -1,6 +1,15 @@
-<mat-form-field appearance="fill" style="margin-bottom: 7px;">
+<mat-form-field class="example-full-width" appearance="fill">
   <mat-label>Régimen</mat-label>
-  <input matInput #input maxlength="4" placeholder="XXXX" [formControl]="regimen">
-  <mat-error *ngIf="regimen.invalid">{{getErrorMessage()}}</mat-error>
-  <mat-hint align="end">{{input.value.length}}/4</mat-hint>
+  <input type="text"
+         placeholder="Elige un régimen"
+         aria-label="Number"
+         matInput
+         [formControl]="myControl"
+         [matAutocomplete]="auto">
+  <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+    <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+      {{option}}
+    </mat-option>
+  </mat-autocomplete>
 </mat-form-field>
+

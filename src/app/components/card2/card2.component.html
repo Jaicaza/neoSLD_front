@@ -6,9 +6,9 @@
     <form [formGroup]="form002" novalidate class="border p-3 form">
 
       <div class="obligatorios">
-        <h3 style="background-color: #3F51B5">Obligatorios</h3>
+        <h3 style="color: white; background-color: #3F51B5; font-weight: bolder;">Obligatorios</h3>
         <mat-selection-list #naf>
-          <mat-list-option *ngFor="let naf of nafObligatorio">
+          <mat-list-option checkboxPosition="before" *ngFor="let naf of nafObligatorio">
             {{naf}}
           </mat-list-option>
         </mat-selection-list>

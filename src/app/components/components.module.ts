@@ -12,6 +12,7 @@ import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.compo
 import { Card3Component } from './card3/card3.component';
 import { CheckBoxComponent } from './check-box/check-box.component';
 import { CheckBoxOpcionalesComponent } from './check-box-opcionales/check-box-opcionales.component';
+import { RangePickerComponent } from './range-picker/range-picker.component';
 
 
 
@@ -28,6 +29,7 @@ import { CheckBoxOpcionalesComponent } from './check-box-opcionales/check-box-op
     Card3Component,
     CheckBoxComponent,
     CheckBoxOpcionalesComponent,
+    RangePickerComponent,
   ],
   exports: [
     HeaderComponent,

@@ -2,5 +2,4 @@
   <mat-label>CCC</mat-label>
   <input matInput #input maxlength="11" placeholder="XXXXXXXXXXX" [formControl]="ccc">
   <mat-error *ngIf="ccc.invalid">{{getErrorMessage()}}</mat-error>
-  <mat-hint align="end">{{input.value.length}}/11</mat-hint>
 </mat-form-field>

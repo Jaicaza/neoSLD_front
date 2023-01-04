@@ -9,14 +9,7 @@
               <app-ccc ngDefaultControl formControlName="secondInput"></app-ccc>
             </div>
             <div class="form-group ">
-              <app-monthpicker
-              id="desde"
-              [parametro]="'Periodo de liquidación desde'"
-            ></app-monthpicker>
-            <app-monthpicker
-              id="Hasta"
-              [parametro]="'Periodo de liquidación hasta'"
-            ></app-monthpicker>
+              <app-range-picker></app-range-picker>
             </div>
             <button id="boton1"
                     type="submit"
