@@ -8,10 +8,8 @@ import { FormGroup } from '@angular/forms';
 })
 export class ExpansionPanelComponent implements OnInit {
 
-  @Input() mesAnio1!: any;
-  @Input() mesAnio2!: any;
-
-  @Input() periodo!:any;
+  @Input() mes!: string;
+  @Input() anio!: string;
 
   form003 = new FormGroup({
   });
@@ -19,6 +17,7 @@ export class ExpansionPanelComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
   panelOpenState = false;

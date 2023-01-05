@@ -30,11 +30,11 @@ craForm = new FormGroup({
   ngOnInit(): void {
   }
 
-  /*getData():void {
+  getData():void {
     this.httpClient.get("assets/numbers.json").subscribe(data =>{
       console.log(data);
     })
-  }*/
+  }
 
   onSubmit() {
     if (this.craForm.valid) {
