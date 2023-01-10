@@ -7,6 +7,7 @@
                   (change)="setAll($event.checked)">
       {{task.name}}
     </mat-checkbox>
+
   </span>
   <span class="example-list-section">
     <ul>
@@ -15,6 +16,9 @@
                       (ngModelChange)="updateAllComplete()">
           {{subtask.name}}
         </mat-checkbox>
+        <button mat-icon-button color="primary" class="right-aligned-button" style="margin-left: 7px;">
+          <mat-icon>delete</mat-icon>
+        </button>
       </li>
     </ul>
   </span>

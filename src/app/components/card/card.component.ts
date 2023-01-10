@@ -15,10 +15,17 @@ export class CardComponent implements OnInit {
 
 intermediateJson = data;
 
+
+
 craForm = new FormGroup({
   firstInput: new FormControl('', Validators.required),
   secondInput: new FormControl('', Validators.required),
-})
+  /*range: new FormGroup({
+    start: new FormControl('', [Validators.required]),
+    end: new FormControl('', [Validators.required]),
+  })*/
+});
+
 
 
   constructor(private httpClient: HttpClient,

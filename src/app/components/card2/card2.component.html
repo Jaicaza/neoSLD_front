@@ -7,11 +7,24 @@
 
       <div class="obligatorios">
         <h3 style="color: white; background-color: #3F51B5; font-weight: bolder;">Obligatorios</h3>
-        <mat-selection-list #naf>
-          <mat-list-option checkboxPosition="before" *ngFor="let naf of nafObligatorio">
-            {{naf}}
-          </mat-list-option>
-        </mat-selection-list>
+
+
+        <div class="obligatorios_content">
+          <mat-selection-list #naf>
+            <mat-list-option checkboxPosition="before" *ngFor="let naf of nafObligatorio">
+              <div style="float: right;">
+                {{naf}}
+              <button mat-icon-button class="right-aligned-button" color="primary" style="display:flexbox; margin-left:33px;">
+                <mat-icon>delete</mat-icon>
+              </button>
+              </div>
+
+            </mat-list-option>
+            </mat-selection-list>
+        </div>
+
+
+
       </div>
       <br>
 
@@ -20,7 +33,7 @@
         Siguiente
       </button>
       <button id="boton3" type="submit" class="btn btn-primary" *ngIf="naf.selectedOptions.selected.length == 0" >
-        Terminar
+        Presentar
       </button>
 
     </form>

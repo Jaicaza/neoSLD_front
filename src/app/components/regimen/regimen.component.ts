@@ -25,6 +25,7 @@ export class RegimenComponent implements OnInit {
     '1145',
     '1266',
   ];
+
   filteredOptions: Observable<string[]> | undefined;
 
   ngOnInit() {

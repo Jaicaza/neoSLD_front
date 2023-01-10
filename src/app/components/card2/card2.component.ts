@@ -1,6 +1,8 @@
-import { Component, OnInit, ɵɵpureFunction1 } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
+
+
 
 @Component({
   selector: 'app-card2',
@@ -9,10 +11,13 @@ import { Router } from '@angular/router';
 })
 export class Card2Component implements OnInit {
 
+
+
   form002 = new FormGroup({
   });
 
   nafObligatorio: string[] = ['123123123145 - RMH', '145478554261 - CFG', '284544786323 - CAF'];
+
 
 
   constructor(private router:Router) { }
@@ -22,4 +27,7 @@ export class Card2Component implements OnInit {
   onSubmit() {
       this.router.navigate(['maqueta003']);
     }
+
+
+
   }
